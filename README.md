@@ -6,5 +6,11 @@ Resume made in Chinese Language
 
 2-HTML5, CSS3, Bootstrap. 
 
+3- Images from Firebase storage.
+
+4- Google fonts.
+
+5- Font Awesome icons.
+
 
 

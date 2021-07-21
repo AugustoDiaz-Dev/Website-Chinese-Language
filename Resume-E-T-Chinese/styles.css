@@ -1,0 +1,353 @@
+/* Title: Elena Toporova
+   Author: Augusto Diaz
+   Year: 2020
+   Description: Resume of Elena Toporova in Chinese Language
+*/
+/*
+Table Of Contents:
+
+01. General Styles
+02. Navbar
+03. Photo card
+04. About me
+05. Work
+06. Studies
+07. Footer
+*/
+
+/* Color Palette: */
+
+.my-background-color {
+  background: #bc4e9c;
+  background: -webkit-linear-gradient(to bottom, #f80759, #bc4e9c);
+  background: linear-gradient(to bottom, #f80759, #bc4e9c);
+}
+.my-color-principal {
+  color: #f80759 !important;
+}
+.my-color-secondary {
+  color: #bc4e9c;
+}
+.my-color-tertiary {
+  color: #eaf200 !important;
+}
+
+/******************************/
+/*     01. General Styles     */
+/******************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+body {
+  color: rgb(255, 255, 255);
+  font-family: "Noto Sans SC", sans-serif;
+  margin: 0;
+}
+/*Text elements*/
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 0.5rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  position: relative;
+  animation: mymove 5s 1;
+  animation-timing-function: ease;
+  text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+@keyframes mymove {
+  from {
+    left: -1920px;
+  }
+  to {
+    left: 0px;
+  }
+}
+h2,
+h3 {
+  text-align: center;
+  font-family: "Ma Shan Zheng", cursive;
+  text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.25rem;
+}
+li {
+  list-style: none;
+  font-size: 1.5rem;
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+/*Img icon elements*/
+
+i {
+  font-size: 1.5rem;
+}
+.bold {
+  font-weight: bold;
+}
+/******************************/
+/*     02. Navbar             */
+/******************************/
+.navbar {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28234, 242, 0, 1.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    border: 2px solid rgb(143, 106, 106);
+    border-radius: 8px;
+    font-size: 1.5rem;
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+  }
+.navbar-brand {
+  font-size: 2rem;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+.nav-brand:hover {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+.nav-link {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+.nav-link:hover {
+  font-size: 2rem;
+}
+
+/******************************/
+/*     03. Photo Card         */
+/******************************/
+.card-title {
+    font-size: 2rem;
+}
+a {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+}
+a:hover {
+  color: #f80759;
+  text-decoration: underline;
+}
+.list-group-item {
+  color: rgb(255, 255, 255);
+  border: solid 2px rgb(255, 255, 255);
+}
+.card-button {
+  background-color: #f80759;
+  color: #eaf200;
+  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 6px;
+  float: right;
+  margin: 6px;
+}
+.card-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #f80759;
+  border-radius: 0.625rem;
+  border: 2px solid #f80759;
+}
+.card {
+  margin-bottom: 4rem;
+}
+/******************************/
+/*     04. AboutMe            */
+/******************************/
+
+#about-me {
+  transition: width 2s, height 2s, transform 1s;
+}
+#about-me:hover {
+  width: 100%;
+  height: auto;
+  transform: rotate(360deg);
+}
+
+/******************************/
+/*     05. Work               */
+/******************************/
+#work {
+  margin-bottom: 4rem;
+}
+.my-cards {
+  height: auto;
+  width: auto;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: solid 2px rgb(255, 255, 255);
+}
+
+/******************************/
+/*     06. Studies            */
+/******************************/
+#studies {
+  margin-bottom: 4rem;
+}
+.compensation {
+  height: 98%;
+}
+.my-language-img {
+  width: 8rem;
+  margin-bottom: 0.625rem;
+  margin-right: 1.25rem;
+}
+#languages {
+  margin-bottom: 4rem;
+}
+
+/******************************/
+/*     07. Footer             */
+/******************************/
+
+#footer {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.625rem;
+  text-align: center;
+  border-radius: 0.625rem;
+  border: solid 2px rgb(255, 255, 255);
+  padding: 1.875rem;
+  margin-bottom: 4rem;
+}
+#footer,
+h2 {
+  margin-bottom: 1rem;
+}
+#footer-center a {
+  margin-left: 0.625rem;
+  color: rgb(255, 255, 255);
+}
+
+#footer-center p {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.blink {
+  animation: blink-animation 3s steps(5, start) infinite;
+  -webkit-animation: blink-animation 3s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+  i {
+    font-size: 1rem;
+  }
+  #about-me:hover {
+    width: 100%;
+    height: auto;
+    transform: rotate(0deg);
+  }
+  #work {
+    margin-bottom: 2rem;
+  }
+  .card-title {
+      font-size: 1.5rem;
+  }
+  .card {
+    margin-bottom: 2rem;
+  }
+  .my-cards {
+    margin-bottom: 1rem;
+  }
+  #studies {
+    margin-bottom: 2rem;
+  }
+  .my-language-img {
+    width: 3rem;
+    margin-bottom: 0.625rem;
+    margin-right: 1.25rem;
+  }
+  #languages {
+    margin-bottom: 2rem;
+  }
+  #footer {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  #footer,
+  h2 {
+    margin-bottom: 1rem;
+  }
+  #footer-center p {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (orientation: landscape) {
+  #studies {
+    text-align: center;
+  }
+  #languages {
+    text-align: center;
+  }
+  #languages span {
+      display: block;
+      margin-bottom: 1rem;
+      margin-right: 0;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+
+    #studies h3 {
+        margin-top: 4rem;
+    }
+}
